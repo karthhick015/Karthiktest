@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-cast-api-enabled="true">
+    <head>
+        <title>WCAG 2.1 standards</title>
+        <link href="style.css" type="text/css">
+
+
+        <style>
+            .formelement {
+                width:100%;
+            }
+            .formelement .form-field{
+                width: 100%;
+                display: flex;
+                padding:10px;   
+                margin-bottom: 10px;             
+            }
+
+            .formelement .form-field label{
+                font-size: 14px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;   
+                width: 200px;           
+            }
+
+            .formelement .form-field .form-control{
+                font-size: 14px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                border-radius: 2px;
+                border:1px solid #cccccc;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+        <h5>H5 Heading</h5>
+        <h6>H6 Heading</h6> -->
+
+<hr>
+<p>&nbsp;</p>
+
+<h1>Application Form</h1>
+<form action="" method="" class="formelement">
+    <div class="form-field">
+        <label for="fname">Name :* </label><input type="text" required aria-label="Please enter the Name. Its a required Field" name="fname" id="fname" placeholder="Enter Name" class="form-control">
+    </div>
+    <div  class="form-field">
+        <label id="lbl_dob" for="fdob">D.O.B : </label><input type="date" id="fdob" aria-labelledby="lbl_dob format_dob" name="fdob" placeholder="Date of Birth"  class="form-control"><span id="format_dob">MM/DD/YYYY</span>
+    </div>
+    <div role="radiogroup" aria-label="fGender" class="form-field">
+        <label id="fGender" for="gender">Gender : </label>
+        <input type="radio" name="gender" id="gmale"  value="Male"  class="form-control"> <label for="gmale"> Male</label>
+        <input type="radio"  class="form-control" id="gfemale" value="Female" name="gender"> <label for="gfemale"> Female</label> 
+    </div>
+    <div  class="form-field"><label for="email">Email : </label><input type="Email" name="email" id="femail" placeholder="Enter Email Address"  class="form-control"></div>
+    
+    <div  class="form-field"><label for="dep">Department</label><select name="dep" class="form-control">
+            <option name="dep1" value="Mech">MECH</option>
+            <option name="dep1" value="Civil">Civil</option>
+            <option name="dep1" value="IT">IT</option>
+            <option name="dep1" value="EEE">EEE</option>
+            <option name="dep1" value="ECE">ECE</option>
+    </select></div>
+    <div  class="form-field"><label for="uploaddoc">Upload Document: </label><input name="uploaddoc" id="fupload_doc" type="File" placeholder="Upload Document"  class="form-control"></div>
+    <div  class="form-field"><label for="fcomments" >Comments: </label><textarea name="fcomments" id="fcomments" rows="30" placeholder="Welcome !!!"  class="form-control"></textarea></div>
+
+   <div  class="form-field"><input type="submit" value="Submit" class="btn"> <input type="Reset" value="Reset" class="btn"></div>
+</form>
+
+<h2>Video</h2>
+<div id="video-content">
+<video width="400" controls title="video" name="Vidohtml"  aria-label="video content" aria-labelledby="video-content">
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    <track src="subtitle.vtt" kind="captions" srclang="en" label="English" default />
+</video>
+</div>
+<br>
+<button type="button">Show Transcript</button>
+
+
+<hr>
+<h3>Audio</h3>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    <track src="subtitle.vtt" kind="captions" srclang="en" label="English" default />
+  </audio>
+
+
+  <hr>
+
+  <h3>Embedded Plugins</h3>
+
+  <object title="fobject" name="Embedded plugins" data="https://www.youtube.com/embed/tgbNymZ7vqY"></object>
+<br>
+<hr>
+<br>
+
+<div id="framedetail">
+<h3>Iframe</h3>
+<iframe width="420" height="315"  name="testiframe" title="Advertisement" aria-label="Iframe" aria-labelledby="ramedetail"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+</div> 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<script src="script.js"></script>
+    </body>
+
+</html>
