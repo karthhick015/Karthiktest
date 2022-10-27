@@ -1,0 +1,47 @@
+
+
+.header{
+background-color: #000;
+color: #ffffff;
+font-size: 18px;
+}
+.header ul{
+    display: flex;
+    margin:0px;
+    padding:0px;
+}
+
+.header ul li{justify-content: space-evenly;
+    justify-items: center;
+    list-style: none;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 14px;
+    font-family: monospace;}
+
+.formelement {
+    width:100%;
+}
+.formelement .form-field{
+    width: 100%;
+    display: flex;
+    padding:10px;   
+    margin-bottom: 10px;             
+}
+
+.formelement .form-field label{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;   
+    width: 200px;           
+}
+
+.formelement .form-field .form-control{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2px;
+    border:1px solid #cccccc;
+    padding: 2px;
+}
+
